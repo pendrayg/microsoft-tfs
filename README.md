@@ -13,7 +13,7 @@ A Node/TypeScript **MCP server** (stdio) that bridges Claude Code straight into 
 [![License: MIT](https://img.shields.io/badge/License-MIT-6e7681?style=for-the-badge)](./LICENSE)
 
 ```sh
-/plugin marketplace add yoannyviquel/marketplace
+/plugin marketplace add pendrayg/marketplace
 /plugin install microsoft-tfs
 ```
 
@@ -50,7 +50,7 @@ A Node/TypeScript **MCP server** (stdio) that bridges Claude Code straight into 
 ## 🚀 Install
 
 ```text
-/plugin marketplace add yoannyviquel/marketplace
+/plugin marketplace add pendrayg/marketplace
 /plugin install microsoft-tfs
 ```
 
@@ -127,6 +127,6 @@ See `src/server.ts` for the MCP bootstrap. Tools are registered via a flat `Tool
 
 <div align="center">
 
-MIT © Yoann Yviquel · Part of the [**yoannyviquel** marketplace](https://github.com/yoannyviquel/marketplace)
+MIT © Yoann Yviquel · Part of the [**pendrayg** marketplace](https://github.com/pendrayg/marketplace)
 
 </div>

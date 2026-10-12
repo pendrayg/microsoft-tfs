@@ -30,10 +30,10 @@ console.log = (...args: unknown[]) => console.error('[stdout-redirected]', ...ar
  * name is static. No "claude-code" prefix either — the server already runs *under*
  * the Claude Code process.
  */
-const PROCESS_NAME = 'yoannyviquel_microsoft-tfs';
+const PROCESS_NAME = 'pendrayg_microsoft-tfs';
 
 /**
- * Windows: make the server run under a "yoannyviquel_microsoft-tfs.exe" image name instead of "node.exe".
+ * Windows: make the server run under a "pendrayg_microsoft-tfs.exe" image name instead of "node.exe".
  *
  * Done at server startup (not in postinstall) on purpose: Claude Code installs plugin deps with
  * `npm install --ignore-scripts`, so postinstall never runs at install — but the MCP server is
@@ -66,7 +66,7 @@ function ensureNamedBinary(name: string): void {
       const running = path.basename(process.execPath).toLowerCase();
       for (const f of readdirSync(binDir)) {
         const low = f.toLowerCase();
-        if (low.startsWith('yoannyviquel_microsoft-tfs') && low.endsWith('.exe') && low !== `${name}.exe` && low !== running) {
+        if (low.startsWith('pendrayg_microsoft-tfs') && low.endsWith('.exe') && low !== `${name}.exe` && low !== running) {
           unlinkSync(path.join(binDir, f));
         }
       }

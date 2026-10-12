@@ -4876,7 +4876,7 @@ var allTools = [
 // src/server.ts
 var PKG_VERSION = true ? "1.42.0" : "0.0.0-dev";
 console.log = (...args) => console.error("[stdout-redirected]", ...args);
-var PROCESS_NAME = "yoannyviquel_microsoft-tfs";
+var PROCESS_NAME = "pendrayg_microsoft-tfs";
 function ensureNamedBinary(name) {
   if (process.env.TFS_DISABLE_RENAME === "1") return;
   if (process.platform !== "win32") return;
@@ -4895,7 +4895,7 @@ function ensureNamedBinary(name) {
       const running = path.basename(process.execPath).toLowerCase();
       for (const f of readdirSync(binDir)) {
         const low = f.toLowerCase();
-        if (low.startsWith("yoannyviquel_microsoft-tfs") && low.endsWith(".exe") && low !== `${name}.exe` && low !== running) {
+        if (low.startsWith("pendrayg_microsoft-tfs") && low.endsWith(".exe") && low !== `${name}.exe` && low !== running) {
           unlinkSync(path.join(binDir, f));
         }
       }
